@@ -34,6 +34,12 @@ dependencies {
 
     // Use the Kotlin JUnit integration.
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
+
+    // SLF4J を使う
+    implementation("org.slf4j:slf4j-api:1.7.32")
+    // Logback を使う
+    implementation("ch.qos.logback:logback-core:1.2.5")
+    implementation("ch.qos.logback:logback-classic:1.2.5")
 }
 
 application {
