@@ -3,9 +3,17 @@
  */
 package ktlog
 
+import ktlog.log.KtLog
+
 class App {
+
+    companion object {
+        private val log by KtLog()
+    }
+
     val greeting: String
         get() {
+            log.info("greeting is called")
             return "Hello World!"
         }
 }
